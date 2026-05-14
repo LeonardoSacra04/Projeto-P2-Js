@@ -1,5 +1,4 @@
 /* carrossel hero */
-
 #carouselHero
 {
     position: relative;
@@ -37,6 +36,7 @@
 
 .sectionTitle 
 {
+    color: #FFFFFF;
     margin-left: 100px;
     font-family: 'Syne', sans-serif;
     font-weight: 700;
