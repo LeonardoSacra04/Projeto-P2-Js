@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <nav>
@@ -17,10 +18,138 @@
             <li><a href="pages/perfil.html">Perfil</a></li>
         </ul>
 
-        <input type="text" placeholder="Buscar jogos, gêneros ou plataformas...">
+        <input type="text" id="searchInput" placeholder="Buscar jogos, gêneros ou plataformas...">
 
         <a href="pages/perfil.html"><img src="/assets/imagens/profilePic.png" alt=""></a>
     </nav>
-    
+
+    <section id="carouselHero">
+        <div id="slidesHero">
+            <img src="https://placehold.co/1700x520" alt=""><!-- Slides injetados via JS -->
+        </div>
+    </section>
+
+    <main>
+        <!-- populares -->
+        <section class="sectionBlock">
+            <div class="sectionHeader">
+                <h2 class="sectionTitle">🔥 Jogos Populares</h2>
+                <a href="pages/catalogo.html" class="sectionLink">Ver todos →</a>
+            </div>
+            <div class="gamesGrid" id="popularGames">
+                <button class="btnCarousel"></button>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <button class="btnCarousel"></button>
+            </div>
+        </section>
+
+        <!-- lancamentos -->
+
+        <section class="sectionBlock">
+            <div class="sectionHeader">
+                <h2 class="sectionTitle">🚀 Lançamentos</h2>
+                <a href="pages/lancamentos.html" class="sectionLink">Ver todos →</a>
+            </div>
+            <div class="gamesGrid" id="lancamentosCarousel">
+                <button class="btnCarousel"></button>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <button class="btnCarousel"></button>
+            </div>
+        </section>
+
+        <!-- promo -->
+
+        <section class="sectionBlock">
+            <div class="sectionHeader">
+                <h2 class="sectionTitle">🏷️ Promoções</h2>
+                <a href="pages/promocoes.html" class="sectionLink">Ver todos →</a>
+            </div>
+            <div class="gamesGrid" id="promocoesCarousel">
+                <button class="btnCarousel"></button>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <article class="skeletonCard">
+                    <img src="https://placehold.co/220x220" alt="">
+                    <h3>Nome do jogo</h3>
+                    <p>4.5 | Action/RPG</p>
+                    <p>R$ 199,90</p>
+                </article>
+                <button class="btnCarousel"></button>
+            </div>
+        </section>
+         
+    </main>
+ 
+    <footer>
+        <div>
+            <span class="footer-logo">GameVault</span>
+            <span>© 2025 GameVault. Todos os direitos reservados.</span>
+            <span>Dados por <a href="https://rawg.io" target="_blank">RAWG API</a></span>
+        </div>
+    </footer>
 </body>
+ <!-- <script src="assets/js/api.js"></script> -->
+    <script src="assets/js/home.js"></script>
 </html>

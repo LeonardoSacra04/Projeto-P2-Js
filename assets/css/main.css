@@ -14,8 +14,9 @@ html
 
 
 /* navbar #toma */
-nav
+nav, footer
 {
+    color: #CBD5E1;
     background-color: #131C2F;
     display: flex;
     flex-direction: row;
